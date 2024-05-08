@@ -152,6 +152,9 @@ body {
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px;
 }
@@ -160,6 +163,7 @@ body {
 }
 .modal-close-btn {
     position: absolute;
+    display: flex;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -172,9 +176,11 @@ body {
     justify-content: center;
     align-items: center; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn .modal-close-icon {
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -186,11 +192,13 @@ body {
 .modal-close-btn:hover > .modal-close-icon 
 .modal-close-btn:focus > .modal-close-icon {
     fill: #2e2f42;
+    fill: #ffffff;
 }
 .contacts-form-description {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -200,6 +208,7 @@ body {
     margin-bottom: 4px;
 }
 label {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -221,6 +230,8 @@ label {
     border: 1px solid rgba(46, 47, 66, 0.4);
     outline: none;
     background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-input:focus + .contacts-form-field-icon {
     fill: #4d5ae5;
@@ -253,6 +264,8 @@ label {
     border-radius: 4px;
     background-color: transparent;
     resize: none;
+    outline: transparent;
+    color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-comment:focus {
@@ -283,11 +296,12 @@ label {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-form-checkbox:checked + .contacts-form-checkbox-lebel .contacts-form-own-checkbox {
     background-color:#404bbf;
     border: none;
-    fill: #ffffff
+    fill: #F4F4FD;
 }
 .contacts-form-checkbox:focus + .contacts-form-checkbox-lebel .contacts-form-own-checkbox {
     outline: 2px solid rgb(0, 0, 255, 0.5);
@@ -305,7 +319,7 @@ label {
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -677,8 +691,14 @@ footer .social-list-link {
 .messenger-form-input {
     border: 1px solid #fff;
     border-radius: 4px;
+    padding-left: 16px;
     width: 264px;
     height: 40px;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     flex-direction: row;
     background-color: transparent;
 }
@@ -687,7 +707,7 @@ footer .social-list-link {
     font-size: 12px;
     line-height: 2.0;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
