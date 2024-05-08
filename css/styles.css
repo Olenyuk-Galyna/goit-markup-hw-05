@@ -184,7 +184,7 @@ body {
     background-color: #404bbf;
     border: none;
 }
-.modal-close-btn:hover > .modal-close-icon 
+.modal-close-btn:hover > .modal-close-icon, 
 .modal-close-btn:focus > .modal-close-icon {
     fill: #ffffff;
 }
@@ -198,11 +198,10 @@ body {
     color: #2e2f42;
 }
 .contacts-form-field-label {
-    display: inline-block;
+    display: block;
     margin-bottom: 4px;
 }
 label {
-    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
