@@ -156,6 +156,9 @@ body {
     padding: 72px 24px 24px;
 }
 .modal-close-btn {
+    fill: #2e2f42;
+}
+.modal-close-btn {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -166,11 +169,14 @@ body {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
-    fill: #2e2f42;
     justify-content: center;
     align-items: center; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close-btn .modal-close-icon {
+    fill: #2e2f42;
+}
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
@@ -293,6 +299,7 @@ label {
     color: #4d5ae5;
 }
 .contacts-form-submit {
+    display: block;
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
@@ -453,6 +460,7 @@ li.advantages-list-item {
 svg {
     fill: #f4f4fd;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -620,10 +628,12 @@ footer .social-list-text {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
+.social-list {
+    margin-right: auto;
+}
 .container.footer-container {
     display: flex;
     align-items: baseline;
-   gap: 16px;
 }
 footer .social-list-link {
     display: flex;
@@ -643,10 +653,13 @@ footer .social-list-link {
 .page-footer .social-list-link:focus {
     background-color: #31d0aa;
 }
-.messenger-form {
-    width: 453px;
-    height: 80px; 
-
+.messenger-form-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 }
 .messenger-form-lebel {
     font-weight: 500;
@@ -654,6 +667,12 @@ footer .social-list-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
+}
+.messenger-form-field {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 .messenger-form-input {
     border: 1px solid #fff;
@@ -680,7 +699,9 @@ footer .social-list-link {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    padding: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
@@ -695,6 +716,6 @@ footer .social-list-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .messenger-form-field-icon {
-    right: 24px;
+    margin-left: 16px;
 }
 
